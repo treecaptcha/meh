@@ -84,9 +84,7 @@
 
 import pyglet
 import random
-import time
 from stopwatch import Stopwatch
-from pyglet import image
 score = 0
 window = pyglet.window.Window(width=500, height=400)
 breadmans = pyglet.graphics.Batch()
