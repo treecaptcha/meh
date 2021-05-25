@@ -117,7 +117,7 @@ def on_draw():
         bagete.draw()
         pyglet.text.Label(text=str(score), font_size=20, x=10, y=370, color=[0,25,25,255]).draw()
         pyglet.text.Label(text=str(round(times.duration, 1)), font_size=20, x=10, y=350, color=[0, 25, 25, 255]).draw()
-    if times.duration >= 5.0:
+    if times.duration >= 30.0:
         window.set_mouse_visible(True)
         game = False
         times.reset()
@@ -132,7 +132,7 @@ def on_draw():
 def update(dt):
     global game
     global enabble
-    if times.duration >= 5:
+    if times.duration >= 30.0:
         window.set_mouse_visible(True)
         game = False
         times.reset()
